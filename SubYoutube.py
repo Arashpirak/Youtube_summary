@@ -18,14 +18,14 @@ def main():
     This script takes a YouTube video URL, extracts its transcript,
     and generates a summary using LangChain and Gemini 2.5 Pro.
     """
-    print("hi arash")
+    
     api_key = input("Please enter your Google API key: ")
     if not api_key:
         print("Error: API key cannot be empty.")
         return
     
     os.environ["GOOGLE_API_KEY"] = api_key
-    print("hi arash 2")
+    
     
     youtube_url = input("Please enter the YouTube video URL: ")
     if "=" in youtube_url:
